@@ -16,11 +16,23 @@
     <h2 style ="color: blue;">Biography</h2>
     <p>My high school: National Tainan First Senior High School <a href="https://www.tnfsh.tn.edu.tw/">(TNFSH)</a></p>
     <p>My department: National Taiwan University Department of Electrical Engineering <a href="https://web.ee.ntu.edu.tw/">(NTUEE)</a></p>
+	<!-- Current Date and Time -->
+	Current Date and Time:
+	<input type="text" id="currentDateTime">
+	<br><br>
+	<script>
+  		var today = new Date();
+		var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var dateTime = date+' '+time;
+  		document.getElementById("currentDateTime").value = dateTime;
+	</script>
     <img src="Wen_Wei.png" alt="Phantom Hsieh" style="width:128px;height:128px;">
     <audio controls autoplay>
     <source src="bgm.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
+
   </body>
 </html>
 
